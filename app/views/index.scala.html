@@ -1,0 +1,18 @@
+@(message: String)
+@main("Play Exercise") {
+
+
+<script type='text/javascript' src='@routes.Assets.versioned("js/index.js")'></script>
+
+<ul id = "persons"></ul>
+
+
+<form action="@routes.HomeController.addPerson()" method="post">
+    Principal<input type = number name = "principal"><br>
+    Period   <input type = number name = "period"><br>
+    Rate     <input type = number name = "rate">
+    <button>Calculate SI</button>
+
+</form>
+
+}
