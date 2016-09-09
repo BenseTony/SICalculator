@@ -1,4 +1,4 @@
 $ ->
-    $.get "/getValues", (persons) ->
-        $.each persons, (index,person) ->
-            $('#persons').append $("<li>").text person.interest_value
+    $.get "/getValues", (interests) ->
+        $.each interests, (index,interest) ->
+            $('#interests').append $("<li>").text interest.interest_value
