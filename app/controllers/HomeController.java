@@ -28,7 +28,7 @@ public class HomeController extends Controller {
     }
     public  Result addPerson(){
         Person person = Form.form(Person.class).bindFromRequest().get();
-        person.testt();
+        person.calculate();
         person.save();
         return redirect(routes.HomeController.index());
     }

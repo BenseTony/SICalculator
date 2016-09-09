@@ -4,11 +4,10 @@
 # --- !Ups
 
 create table person (
-  name                      varchar(255),
   principal                 integer,
-  period                    integer,
-  rate                      integer,
-  answer                    float)
+  num_years                 integer,
+  rate_of_interest          integer,
+  interest_value            float)
 ;
 
 

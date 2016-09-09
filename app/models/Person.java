@@ -8,16 +8,13 @@ import javax.persistence.Id;
 @Entity
 public class Person extends Model {
 
-    //@Id
-    //public String id;
-    public String name;
     public int principal;
-    public int period;
-    public int rate;
-    public float answer;
-    public void testt()
+    public int num_years;
+    public int rate_of_interest;
+    public float interest_value;
+    public void calculate()
     {
-        answer = (principal*period*rate)/100;
+        interest_value = (principal*num_years*rate_of_interest)/100;
     }
 
 }

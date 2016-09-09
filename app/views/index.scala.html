@@ -2,17 +2,22 @@
 @main("Play Exercise") {
 
 
-<script type='text/javascript' src='@routes.Assets.versioned("js/index.js")'></script>
-
-<ul id = "persons"></ul>
+<center><b><u><h2>SIMPLE INTEREST CALCULATOR</h2></u></b></center>
+<h4><strong>Description      : </strong>This is a simple tool for calculating the simple interest for the given principal amount with the corresponding Maturity period and rate of interest<br><br>
+<u><b>Key Terms</b></u><br>
+    <strong>Principal   &nbsp: </strong><i>It is the amount on which the issuer pays interest, and which, most commonly, has to be repaid at the end of the term</i><br>
+    <strong>Maturity    &nbsp   : </strong><i>The issuer has to repay the nominal amount on the maturity date</i><br>
+    <strong>Rate of Interest : </strong><i>Interest is payment from a borrower to a lender of an amount above repayment of the principal sum</i></h4>
 
 
 <form action="@routes.HomeController.addPerson()" method="post">
-    Principal<input type = number name = "principal"><br>
-    Period   <input type = number name = "period"><br>
-    Rate     <input type = number name = "rate">
-    <button>Calculate SI</button>
-
+    <table>
+        <tr><td align = "left">Enter the Principal Amount in Rs.</td><td><input type = number name = "principal"></td></tr>
+        <tr><td align = "left">Enter the Maturity Period in terms of years</td><td><input type = number name = "num_years"></td></tr>
+        <tr><td align = "left">Enter the rate of interest</td><td><input type = number name = "rate_of_interest"></td></tr>
+    </table>
+<center><button>Calculate SI</button></center>
 </form>
-
+<b><h4>Simple Interest Amount is Rs</h4></b><ul id = "persons"></ul>
+<script type='text/javascript' src='@routes.Assets.versioned("js/index.js")'></script>
 }
